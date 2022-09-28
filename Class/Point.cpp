@@ -8,6 +8,10 @@ Point::Point(float x, float y){
     setX(x);
     setY(y);
 }
+Point::Point() {
+    x=0;
+    y=0;
+}
 
 float Point::getX() const {
     return x;
@@ -24,3 +28,6 @@ float Point::getY() const {
 void Point::setY(float y) {
     Point::y = y;
 }
+
+Point::~Point() {}
+

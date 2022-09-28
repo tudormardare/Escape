@@ -11,6 +11,7 @@ private:
     float x;
     float y;
 public:
+    Point();
 
     Point(float x, float y);
 
@@ -21,6 +22,8 @@ public:
     float getY() const;
 
     void setY(float y);
+
+    ~Point();
 
 };
 

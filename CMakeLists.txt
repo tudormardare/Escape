@@ -3,7 +3,7 @@ project(Escape3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Escape main.cpp Class/Point.cpp Headers/Point.h)
+add_executable(Escape Prove/main.cpp Class/Point.cpp Headers/Point.h Headers/Sprite.h Class/Sprite.cpp Class/Saw.cpp Headers/Saw.h)
 
 set (SFML_STATIC_LIBRARIES TRUE)
 set (SFML_DIR C:/SFML/lib/cmake/SFML)
