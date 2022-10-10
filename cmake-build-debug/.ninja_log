@@ -1,0 +1,8 @@
+# ninja log v5
+2	886	6871208014808490	CMakeFiles/Escape.dir/main.cpp.obj	afca8f803f28ebef
+887	1236	6871208018258291	Escape.exe	1027d31dd4052eef
+2	154	6871214067444742	build.ninja	b25e332074a5dd0b
+18	154	6860756525436748	CMakeFiles/Escape.dir/Class/Point.cpp.obj	1dc4645d5182fdaa
+7	195	6870940819597398	CMakeFiles/Escape.dir/Class/Sprite.cpp.obj	3ff5bbac86fc9eda
+3	216	6870940819817497	CMakeFiles/Escape.dir/Class/Saw.cpp.obj	21243ffa098fa80f
+9	195	6870940819607444	CMakeFiles/Escape.dir/Class/Map.cpp.obj	46198f0f0e1410f9

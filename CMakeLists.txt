@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(Escape3)
+project(Escape)
 
 set(CMAKE_CXX_STANDARD 14)
 
