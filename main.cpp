@@ -1,9 +1,9 @@
 #include <iostream>
 #include <memory>
 #include <unistd.h>
-#include "Headers/Point.h"
-#include "Headers/Sprite.h"
-#include "Headers/Saw.h"
+#include "../Escape2/Headers/Point.h"
+#include "../Escape2/Headers/Sprite.h"
+#include "../Escape2/Headers/Saw.h"
 #include "SFML/Window.hpp"
 #include "wtypes.h"
 #include "SFML/Graphics.hpp"
