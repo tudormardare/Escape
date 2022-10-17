@@ -1,24 +1,16 @@
 //
-// Created by tudor on 11/10/2022.
+// Created by tudor on 12/10/2022.
 //
+#include <gtest/gtest.h>
+#include "../Class/Weapon.h"
+#include "../Class/Hero.h"
+#include <SFML/Graphics.hpp>
+#include "gtest/gtest_pred_impl.h"
 
-#include "gtest/gtest.h"
-#include "../Headers/Hero.h"
 
 TEST(Hero, constructor){
-    Hero hero;
-    int hp = 3;
-    EXPECT_EQ(hero.getHp(), hp);
-}
-
-TEST(Hero, changeHP){
-    Hero hero;
-    int hp = 2;
-    hero.changeHp(-1);
-    EXPECT_EQ(hero.getHp(), hp);
-}
-
-TEST(Hero, shoot){
-    Hero hero;
-    EXPECT_EQ(hero.shoot(), true);
+    Weapon weapon;
+    sf::Vector2f pos (0,0);
+    Hero hero(weapon, pos);
+    EXPECT_EQ(hero.getHp(), 3);
 }

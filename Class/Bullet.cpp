@@ -1,5 +1,15 @@
 //
-// Created by tudor on 11/10/2022.
+// Created by tudor on 17/10/2022.
 //
 
-#include "../Headers/Bullet.h"
+#include "Bullet.h"
+
+Bullet::~Bullet() {
+}
+
+Bullet::Bullet(const int &id, const int &damage) {
+    this->damage = damage;
+}
+
+Bullet::Bullet() {
+}

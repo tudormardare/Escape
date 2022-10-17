@@ -18,7 +18,7 @@ void GetDesktopResolution(int& horizontal, int& vertical) {
 }
 
 int main() {
-    int height, width;
+    /*int height, width;
     GetDesktopResolution(width,height);
     int windowHeight= (height/4)*3;
     int windowWidth = (width/4)*3;
@@ -102,6 +102,6 @@ int main() {
         window.draw(hero);
         window.display();
 
-    }
+    }*/
 }
 

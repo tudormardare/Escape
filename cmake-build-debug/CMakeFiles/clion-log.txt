@@ -9,6 +9,7 @@ CMake Deprecation Warning at Test/lib/googletest/CMakeLists.txt:53 (cmake_minimu
 
 -- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) 
 -- Found SFML 2.5.1 in C:/SFML/lib/cmake/SFML
+-- Found SFML 2.5.1 in C:/SFML/lib/cmake/SFML
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/cmake-build-debug

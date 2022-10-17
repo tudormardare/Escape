@@ -1,25 +1,41 @@
 //
-// Created by tudor on 11/10/2022.
+// Created by tudor on 12/10/2022.
 //
 
-#include "../Headers/Hero.h"
+#include "Hero.h"
+#include "Weapon.h"
 
-Hero::Hero() {
-    hp=3;
+Hero::Hero(const Weapon &weapon, const sf::Vector2f &position) {
+    this->weapon = weapon;
+    this->hp = HERO_HP;
+    this->energy = HERO_MAX_ENERGY;
+    this->speed = HERO_SPEED;
+    this->score = 0;
+    sprite.setPosition(position);
+    texture.loadFromFile("immagini/hero.png");
+    sprite.setScale(DEFAULT_SCALE_X, DEFAULT_SCALE_Y);
+    sprite.setTexture(texture, true);
 }
-short int Hero::getHp() {
-    return hp;
-}
-
-
-void Hero::changeHp(short difference) {
-    hp = hp + difference;
-}
-
-Hero::~Hero() {
-
-}
-
 bool Hero::shoot() {
-    return gun.shoot();
+    return true;
+}
+
+Hero::~Hero(){
+
+}
+
+int Hero::getHp() const{
+    return this->hp;
+}
+
+void Hero::changeHp(const int &damage) {
+    this->hp+=damage;
+}
+
+void Hero::draw() {
+
+}
+
+void Hero(){
+
 }
