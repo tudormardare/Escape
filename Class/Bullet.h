@@ -7,8 +7,9 @@
 
 
 #include <SFML/Graphics.hpp>
+#include "MySprite.h"
 
-class Bullet {
+class Bullet: MySprite{
 private:
     sf::Sprite sprite;
     sf::Texture texture;

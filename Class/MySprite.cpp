@@ -3,3 +3,8 @@
 //
 
 #include "MySprite.h"
+
+
+void MySprite::setSpeed(const float &speed) {
+    this->speed = speed;
+}

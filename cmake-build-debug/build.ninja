@@ -222,6 +222,30 @@ build Test/CMakeFiles/runAllTests.dir/HeroTests.cpp.obj: CXX_COMPILER__runAllTes
   OBJECT_DIR = Test\CMakeFiles\runAllTests.dir
   OBJECT_FILE_DIR = Test\CMakeFiles\runAllTests.dir
 
+build Test/CMakeFiles/runAllTests.dir/__/Class/Hero.cpp.obj: CXX_COMPILER__runAllTests_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Hero.cpp || cmake_object_order_depends_target_runAllTests
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = Test\CMakeFiles\runAllTests.dir\__\Class\Hero.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest" -isystem "C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest/include" -isystem C:/SFML/include
+  OBJECT_DIR = Test\CMakeFiles\runAllTests.dir
+  OBJECT_FILE_DIR = Test\CMakeFiles\runAllTests.dir\__\Class
+
+build Test/CMakeFiles/runAllTests.dir/__/Class/Weapon.cpp.obj: CXX_COMPILER__runAllTests_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Weapon.cpp || cmake_object_order_depends_target_runAllTests
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = Test\CMakeFiles\runAllTests.dir\__\Class\Weapon.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest" -isystem "C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest/include" -isystem C:/SFML/include
+  OBJECT_DIR = Test\CMakeFiles\runAllTests.dir
+  OBJECT_FILE_DIR = Test\CMakeFiles\runAllTests.dir\__\Class
+
+build Test/CMakeFiles/runAllTests.dir/__/Class/Bullet.cpp.obj: CXX_COMPILER__runAllTests_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Bullet.cpp || cmake_object_order_depends_target_runAllTests
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = Test\CMakeFiles\runAllTests.dir\__\Class\Bullet.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest" -isystem "C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest/include" -isystem C:/SFML/include
+  OBJECT_DIR = Test\CMakeFiles\runAllTests.dir
+  OBJECT_FILE_DIR = Test\CMakeFiles\runAllTests.dir\__\Class
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runAllTests
@@ -230,7 +254,7 @@ build Test/CMakeFiles/runAllTests.dir/HeroTests.cpp.obj: CXX_COMPILER__runAllTes
 #############################################
 # Link the executable Test\runAllTests.exe
 
-build Test/runAllTests.exe: CXX_EXECUTABLE_LINKER__runAllTests_Debug Test/CMakeFiles/runAllTests.dir/runAllTests.cpp.obj Test/CMakeFiles/runAllTests.dir/HeroTests.cpp.obj | Test/lib/googletest/libgtestd.a Test/lib/googletest/libgtest_maind.a libcore.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-network-s-d.a Test/lib/googletest/libgtestd.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libfreetype.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a C$:/SFML/lib/libsfml-system-s-d.a || Test/lib/googletest/libgtest_maind.a Test/lib/googletest/libgtestd.a libcore.a
+build Test/runAllTests.exe: CXX_EXECUTABLE_LINKER__runAllTests_Debug Test/CMakeFiles/runAllTests.dir/runAllTests.cpp.obj Test/CMakeFiles/runAllTests.dir/HeroTests.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Hero.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Weapon.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Bullet.cpp.obj | Test/lib/googletest/libgtestd.a Test/lib/googletest/libgtest_maind.a libcore.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-network-s-d.a Test/lib/googletest/libgtestd.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libfreetype.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a C$:/SFML/lib/libsfml-system-s-d.a || Test/lib/googletest/libgtest_maind.a Test/lib/googletest/libgtestd.a libcore.a
   FLAGS = -g
   LINK_LIBRARIES = Test/lib/googletest/libgtestd.a  Test/lib/googletest/libgtest_maind.a  libcore.a  C:/SFML/lib/libsfml-system-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  C:/SFML/lib/libsfml-graphics-s-d.a  C:/SFML/lib/libsfml-audio-s-d.a  C:/SFML/lib/libsfml-network-s-d.a  Test/lib/googletest/libgtestd.a  C:/SFML/lib/libsfml-window-s-d.a  -lgdi32  -lOpenGL32  C:/SFML/lib/libfreetype.a  C:/SFML/lib/libopenal32.a  C:/SFML/lib/libvorbisfile.a  C:/SFML/lib/libvorbisenc.a  C:/SFML/lib/libvorbis.a  C:/SFML/lib/libogg.a  C:/SFML/lib/libFLAC.a  C:/SFML/lib/libsfml-system-s-d.a  -lwinmm  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Test\CMakeFiles\runAllTests.dir

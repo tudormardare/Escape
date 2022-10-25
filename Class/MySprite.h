@@ -14,8 +14,8 @@ protected:
     sf::Texture texture;
     float speed;
 public:
-    void draw();
-    virtual void move(const float& offsetX, const float& offsetY);
+    virtual void move(const float& offsetX, const float& offsetY) = 0;
+    void setSpeed(const float& speed);
 };
 
 

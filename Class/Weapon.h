@@ -9,8 +9,9 @@
 #include <SFML/Graphics/Sprite.hpp>
 #include <SFML/Graphics/Texture.hpp>
 #include "Bullet.h"
+#include "MySprite.h"
 
-class Weapon {
+class Weapon: public MySprite{
 private:
     sf::Sprite sprite;
     sf::Texture texture;

@@ -8,7 +8,9 @@
 
 #include <SFML/Graphics.hpp>
 #include "Weapon.h"
-class Hero{
+#include "MySprite.h"
+
+class Hero: public MySprite{
 public:
 
     constexpr static float DEFAULT_SCALE_X = 0.2f;
@@ -17,8 +19,6 @@ public:
     constexpr static float HERO_SPEED = 3.f;
     static const int HERO_MAX_ENERGY = 300;
 private:
-    sf::Sprite sprite;
-    sf::Texture texture;
     int energy;
     int hp;
     int score;
