@@ -36,6 +36,18 @@ void Hero::draw() {
 
 }
 
+void Hero::move(const float &offsetX, const float &offsetY) {
+    sprite.setPosition(sprite.getPosition().x + (offsetX * speed), sprite.getPosition().y + (offsetY * speed));
+}
+
+float Hero::getPositionX() const {
+    return sprite.getPosition().x;
+}
+
+float Hero::getPositionY() const {
+    return sprite.getPosition().y;
+}
+
 void Hero(){
 
 }

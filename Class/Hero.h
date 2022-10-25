@@ -23,13 +23,16 @@ private:
     int hp;
     int score;
     Weapon weapon;
-    float speed;
 public:
     Hero(const Weapon &weapon, const sf::Vector2f &position);
     bool shoot();
     int getHp() const;
     ~Hero();
     void draw();
+    void move(const float& offsetX, const float& offsetY) override;
+    float getPositionX() const;
+    float getPositionY() const;
+
 private:
     void changeHp(const int &damage);
 };

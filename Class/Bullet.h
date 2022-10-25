@@ -9,13 +9,13 @@
 #include <SFML/Graphics.hpp>
 #include "MySprite.h"
 
-class Bullet: MySprite{
+class Bullet: public MySprite{
 private:
-    sf::Sprite sprite;
-    sf::Texture texture;
     int damage;
 public:
     Bullet(const int &id, const int &damage);
+    void move(const float& offsetX, const float& offsetY) override;
+    bool hit();
     Bullet();
     ~Bullet();
 };

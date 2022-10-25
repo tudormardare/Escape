@@ -13,3 +13,11 @@ Bullet::Bullet(const int &id, const int &damage) {
 
 Bullet::Bullet() {
 }
+
+void Bullet::move(const float &offsetX, const float &offsetY) {
+
+}
+
+bool Bullet::hit() {
+    return true;
+}

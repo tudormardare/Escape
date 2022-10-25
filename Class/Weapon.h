@@ -21,8 +21,8 @@ private:
 public:
     Weapon(const sf::Vector2f &position, const float &bulletSpeed, const Bullet &bulletType);
     Weapon();
-    void shoot();
-    void move(const float &offsetX, const float &offsetY);
+    bool shoot();
+    void move(const float &offsetX, const float &offsetY) override;
 
 };
 

@@ -18,8 +18,9 @@ Weapon::Weapon() {
 
 }
 
-void Weapon::shoot() {
-
+bool Weapon::shoot() {
+    bulletType.move(30,0);
+    return bulletType.hit();
 }
 
 void Weapon::move(const float &offsetX, const float &offsetY) {
