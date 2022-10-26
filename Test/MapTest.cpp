@@ -5,5 +5,6 @@
 #include "../Class/Map.h"
 
 TEST(Map, constructor){
-    Map map();
+    Map map( 2);
+    EXPECT_EQ(map.getId(), 2);
 }

@@ -5,24 +5,45 @@
 #include <fstream>
 #include <iostream>
 #include "Map.h"
-
-Map::Map() {
-    std::ifstream myFile;
-    myFile.open("Files/Maps.txt");
-    std::string myString("1");
-    if ( myFile.is_open() ) { // always check whether the file is open
-        myFile >> myString; // pipe file's content into stream
-        std::cout << myString; // pipe stream's content to standard output
-    }
-    texture.loadFromFile("immagini/Prova.png");
-    //sprite.setScale(sf::Vector2f((float) windowWidth/texture.getSize().x, (float) windowHeight/texture.getSize().y));
-    sprite.setScale(MAP_SCALE_X,MAP_SCALE_Y);
-    sprite.setTexture(texture,true);
-}
+#include <limits>
+#include <sstream>
 
 void Map::move(const float &offsetX, const float &offsetY) {
-    MySprite::move(offsetX, offsetY);
 }
 Map::~Map() {
 
 }
+
+Map::Map(const int& id) {
+    this->id = id;
+    texture.loadFromFile(getPath(id));
+    sprite.setTexture(texture, true);
+    sprite.setScale(MAP_SCALE_X, MAP_SCALE_Y);
+}
+
+int Map::getId() const {
+    return this->id;
+}
+
+std::string Map::getPath(const int &id) {
+    std::string currentLine;
+    std::string delimiter = ">";
+    int currentId = 0;
+    size_t pos = 0;
+    std::ifstream myFile("Files/Maps.txt");
+    if(myFile.is_open()){
+        while(myFile.good() && currentId != id ) {
+            std::getline(myFile,  currentLine);
+            pos = currentLine.find(delimiter);
+            currentId++;
+        }
+    }
+    myFile.close();
+    return currentLine.substr(pos + 1, std::string::npos);
+
+}
+
+
+
+
+

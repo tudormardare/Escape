@@ -18,11 +18,13 @@ public:
     static const int HERO_HP = 3;
     constexpr static float HERO_SPEED = 3.f;
     static const int HERO_MAX_ENERGY = 300;
+    constexpr static float MAX_DISTANCE_FROM_GROUND = 30.f;
 private:
     int energy;
     int hp;
     int score;
     Weapon weapon;
+    int distanceFromGround;
 public:
     Hero(const Weapon &weapon, const sf::Vector2f &position);
     bool shoot();

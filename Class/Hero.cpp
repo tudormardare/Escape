@@ -11,6 +11,7 @@ Hero::Hero(const Weapon &weapon, const sf::Vector2f &position) {
     this->energy = HERO_MAX_ENERGY;
     this->speed = HERO_SPEED;
     this->score = 0;
+    this->distanceFromGround = 0;
     sprite.setPosition(position);
     texture.loadFromFile("immagini/hero.png");
     sprite.setScale(DEFAULT_SCALE_X, DEFAULT_SCALE_Y);
