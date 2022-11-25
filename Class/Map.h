@@ -12,14 +12,12 @@ class Map: public MySprite{
 public:
     constexpr static float MAP_SCALE_X = 1.42;
     constexpr static float MAP_SCALE_Y = 1.42;
-
     explicit Map(const int& id);
     void move(const float& offsetX, const float& offsetY) override;
     ~Map();
     int getId() const;
 private:
     int id;
-    std::string getPath(const int& id);
 };
 
 

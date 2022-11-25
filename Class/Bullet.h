@@ -11,12 +11,16 @@
 
 class Bullet: public MySprite{
 private:
+    int id;
     int damage;
 public:
-    Bullet(const int &id, const int &damage);
+    static constexpr float BULLET_SCALE_X = 0.2;
+    static constexpr float BULLET_SCALE_Y = 0.2;
+
+
+    explicit Bullet(const int &id);
     void move(const float& offsetX, const float& offsetY) override;
     bool hit();
-    Bullet();
     ~Bullet();
 };
 

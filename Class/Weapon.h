@@ -13,14 +13,18 @@
 
 class Weapon: public MySprite{
 private:
+    int id;
     sf::Sprite sprite;
     sf::Texture texture;
     float bulletSpeed;
     sf::Vector2f position;
-    Bullet bulletType;
+    std::unique_ptr<Bullet> bulletType;
 public:
-    Weapon(const sf::Vector2f &position, const float &bulletSpeed, const Bullet &bulletType);
-    Weapon();
+    static constexpr float WEAPON_SCALE_X = 0.2;
+    static constexpr float WEAPON_SCALE_Y = 0.2;
+
+    explicit Weapon(const int &id);
+    ~Weapon();
     bool shoot();
     void move(const float &offsetX, const float &offsetY) override;
 

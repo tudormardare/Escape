@@ -4,19 +4,22 @@
 
 #include "Hero.h"
 #include "Weapon.h"
-
-Hero::Hero(const Weapon &weapon, const sf::Vector2f &position) {
-    this->weapon = weapon;
+#include "FileReader.h"
+Hero::Hero(const int &id) {
+    std::vector<std::string> attributes;
+    attributes = FileReader::getAttributesFromFile("Files/Hero.txt", id);
+    this->id = stoi(attributes[0]);
     this->hp = HERO_HP;
     this->energy = HERO_MAX_ENERGY;
     this->speed = HERO_SPEED;
     this->score = 0;
     this->distanceFromGround = 0;
-    sprite.setPosition(position);
-    texture.loadFromFile("immagini/hero.png");
+    weapon = std::make_unique<Weapon> (stoi(attributes[2]));
+    texture.loadFromFile(attributes[1]);
     sprite.setScale(DEFAULT_SCALE_X, DEFAULT_SCALE_Y);
     sprite.setTexture(texture, true);
 }
+
 bool Hero::shoot() {
     return true;
 }

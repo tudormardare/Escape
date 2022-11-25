@@ -6,6 +6,6 @@
 #include "../Class/Weapon.h"
 
 TEST(Weapon, shoot){
-    Weapon weapon;
+    Weapon weapon(1);
     EXPECT_EQ(weapon.shoot(), true);
 }

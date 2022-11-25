@@ -8,17 +8,6 @@
 
 
 TEST(Hero, constructor){
-    Weapon weapon;
-    sf::Vector2f pos (0,0);
-    Hero hero(weapon, pos);
+    Hero hero(1);
     EXPECT_EQ(hero.getHp(), 3);
-}
-
-TEST(HERO, move){
-    Weapon weapon;
-    sf::Vector2f pos (0,0);
-    Hero hero(weapon, pos);
-    hero.move(10, 10);
-    EXPECT_EQ(hero.getPositionX(), 10 * hero.HERO_SPEED);
-    EXPECT_EQ(hero.getPositionY(), 10 * hero.HERO_SPEED);
 }

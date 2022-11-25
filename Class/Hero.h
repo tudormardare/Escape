@@ -20,13 +20,14 @@ public:
     static const int HERO_MAX_ENERGY = 300;
     constexpr static float MAX_DISTANCE_FROM_GROUND = 30.f;
 private:
+    int id;
     int energy;
     int hp;
     int score;
-    Weapon weapon;
+    std::unique_ptr<Weapon> weapon;
     int distanceFromGround;
 public:
-    Hero(const Weapon &weapon, const sf::Vector2f &position);
+    explicit Hero(const int &id);
     bool shoot();
     int getHp() const;
     ~Hero();

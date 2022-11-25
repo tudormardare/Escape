@@ -4,25 +4,30 @@
 
 #include "Weapon.h"
 #include "Bullet.h"
+#include "FileReader.h"
 
-Weapon::Weapon(const sf::Vector2f &position, const float &bulletSpeed, const Bullet &bulletType) {
-    this->bulletSpeed = bulletSpeed;
-    texture.loadFromFile("Inserisci qui percorso");
+Weapon::Weapon(const int &id) {
+    std::vector<std::string> attributes;
+    attributes = FileReader::getAttributesFromFile("Files/Weapons.txt", id);
+    this->id = stoi(attributes[0]);
+    texture.loadFromFile(attributes[1]);
     sprite.setTexture(texture, true);
-    sprite.setScale(0.2, 0.2);
+    sprite.setScale(WEAPON_SCALE_X, WEAPON_SCALE_Y);
     sprite.setPosition(position);
-    this->bulletType = bulletType;
+    this->bulletSpeed = stoi(attributes[2]);
+    bulletType = std::make_unique<Bullet>(stoi(attributes[3]));
 }
 
-Weapon::Weapon() {
-
-}
 
 bool Weapon::shoot() {
-    bulletType.move(30,0);
-    return bulletType.hit();
+    bulletType->move(30,0);
+    return bulletType->hit();
 }
 
 void Weapon::move(const float &offsetX, const float &offsetY) {
+
+}
+
+Weapon::~Weapon() {
 
 }
