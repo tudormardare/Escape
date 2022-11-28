@@ -3,17 +3,12 @@
 //
 
 #include <fstream>
-#include <iostream>
 #include "Map.h"
-#include <limits>
-#include <sstream>
 #include "FileReader.h"
 
 void Map::move(const float &offsetX, const float &offsetY) {
 }
-Map::~Map() {
-
-}
+Map::~Map() = default;
 
 Map::Map(const int& id) {
     std::vector<std::string> attributes;

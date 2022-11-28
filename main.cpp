@@ -1,27 +1,25 @@
-#include <iostream>
+
 #include <memory>
-#include <unistd.h>
-#include "../Escape2/Headers/Point.h"
-#include "../Escape2/Headers/Sprite.h"
-#include "../Escape2/Headers/Saw.h"
-#include "SFML/Window.hpp"
+
+#include <SFML/Window.hpp>
 #include "wtypes.h"
-#include "SFML/Graphics.hpp"
-#include "SFML/System.hpp"
+#include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+#include "Class/Menu.h"
+#include "Class/Hero.h"
+#include "Class/Game.h"
 
 void GetDesktopResolution(int& horizontal, int& vertical) {
     RECT desktop;
-    const HWND hDesktop = GetDesktopWindow();
+    const auto hDesktop = GetDesktopWindow();
     GetWindowRect(hDesktop, &desktop);
     horizontal = desktop.right;
     vertical = desktop.bottom;
 }
 
 int main() {
-    /*int height, width;
-    GetDesktopResolution(width,height);
-    int windowHeight= (height/4)*3;
-    int windowWidth = (width/4)*3;
+
+    /*
     std::cout<<height;
     sf::Sprite sprite;
     sf::Sprite hero;
@@ -104,5 +102,9 @@ int main() {
 
     }*/
 
+    sf::RenderWindow window(sf::VideoMode(1080, 720), "Moving a shape");
+    window.setVerticalSyncEnabled(true);
+    Menu menu;
+    menu.MainMenu(window);
 }
 

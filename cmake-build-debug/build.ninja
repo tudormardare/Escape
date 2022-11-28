@@ -47,7 +47,7 @@ cmake_ninja_workdir = C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLion
 #############################################
 # Order-only phony target for Escape
 
-build cmake_object_order_depends_target_Escape: phony || cmake_object_order_depends_target_core
+build cmake_object_order_depends_target_Escape: phony || CMakeFiles/Escape.dir
 
 build CMakeFiles/Escape.dir/main.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/main.cpp || cmake_object_order_depends_target_Escape
   DEFINES = -DSFML_STATIC
@@ -57,6 +57,70 @@ build CMakeFiles/Escape.dir/main.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/t
   OBJECT_DIR = CMakeFiles\Escape.dir
   OBJECT_FILE_DIR = CMakeFiles\Escape.dir
 
+build CMakeFiles/Escape.dir/Class/Hero.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Hero.cpp || cmake_object_order_depends_target_Escape
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Escape.dir\Class\Hero.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Escape.dir
+  OBJECT_FILE_DIR = CMakeFiles\Escape.dir\Class
+
+build CMakeFiles/Escape.dir/Class/Weapon.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Weapon.cpp || cmake_object_order_depends_target_Escape
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Escape.dir\Class\Weapon.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Escape.dir
+  OBJECT_FILE_DIR = CMakeFiles\Escape.dir\Class
+
+build CMakeFiles/Escape.dir/Class/Bullet.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Bullet.cpp || cmake_object_order_depends_target_Escape
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Escape.dir\Class\Bullet.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Escape.dir
+  OBJECT_FILE_DIR = CMakeFiles\Escape.dir\Class
+
+build CMakeFiles/Escape.dir/Class/MySprite.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/MySprite.cpp || cmake_object_order_depends_target_Escape
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Escape.dir\Class\MySprite.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Escape.dir
+  OBJECT_FILE_DIR = CMakeFiles\Escape.dir\Class
+
+build CMakeFiles/Escape.dir/Class/Map.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Map.cpp || cmake_object_order_depends_target_Escape
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Escape.dir\Class\Map.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Escape.dir
+  OBJECT_FILE_DIR = CMakeFiles\Escape.dir\Class
+
+build CMakeFiles/Escape.dir/Class/Game.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Game.cpp || cmake_object_order_depends_target_Escape
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Escape.dir\Class\Game.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Escape.dir
+  OBJECT_FILE_DIR = CMakeFiles\Escape.dir\Class
+
+build CMakeFiles/Escape.dir/Class/FileReader.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/FileReader.cpp || cmake_object_order_depends_target_Escape
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Escape.dir\Class\FileReader.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Escape.dir
+  OBJECT_FILE_DIR = CMakeFiles\Escape.dir\Class
+
+build CMakeFiles/Escape.dir/Class/Menu.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Menu.cpp || cmake_object_order_depends_target_Escape
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = CMakeFiles\Escape.dir\Class\Menu.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -isystem C:/SFML/include
+  OBJECT_DIR = CMakeFiles\Escape.dir
+  OBJECT_FILE_DIR = CMakeFiles\Escape.dir\Class
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Escape
@@ -65,130 +129,15 @@ build CMakeFiles/Escape.dir/main.cpp.obj: CXX_COMPILER__Escape_Debug C$:/Users/t
 #############################################
 # Link the executable Escape.exe
 
-build Escape.exe: CXX_EXECUTABLE_LINKER__Escape_Debug CMakeFiles/Escape.dir/main.cpp.obj | libcore.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libfreetype.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a || libcore.a
+build Escape.exe: CXX_EXECUTABLE_LINKER__Escape_Debug CMakeFiles/Escape.dir/main.cpp.obj CMakeFiles/Escape.dir/Class/Hero.cpp.obj CMakeFiles/Escape.dir/Class/Weapon.cpp.obj CMakeFiles/Escape.dir/Class/Bullet.cpp.obj CMakeFiles/Escape.dir/Class/MySprite.cpp.obj CMakeFiles/Escape.dir/Class/Map.cpp.obj CMakeFiles/Escape.dir/Class/Game.cpp.obj CMakeFiles/Escape.dir/Class/FileReader.cpp.obj CMakeFiles/Escape.dir/Class/Menu.cpp.obj | C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libfreetype.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a
   FLAGS = -g
-  LINK_LIBRARIES = libcore.a  C:/SFML/lib/libsfml-system-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  C:/SFML/lib/libsfml-graphics-s-d.a  C:/SFML/lib/libsfml-audio-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  -lgdi32  -lOpenGL32  C:/SFML/lib/libfreetype.a  C:/SFML/lib/libsfml-system-s-d.a  -lwinmm  C:/SFML/lib/libopenal32.a  C:/SFML/lib/libvorbisfile.a  C:/SFML/lib/libvorbisenc.a  C:/SFML/lib/libvorbis.a  C:/SFML/lib/libogg.a  C:/SFML/lib/libFLAC.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/SFML/lib/libsfml-system-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  C:/SFML/lib/libsfml-graphics-s-d.a  C:/SFML/lib/libsfml-audio-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  -lgdi32  -lOpenGL32  C:/SFML/lib/libfreetype.a  C:/SFML/lib/libsfml-system-s-d.a  -lwinmm  C:/SFML/lib/libopenal32.a  C:/SFML/lib/libvorbisfile.a  C:/SFML/lib/libvorbisenc.a  C:/SFML/lib/libvorbis.a  C:/SFML/lib/libogg.a  C:/SFML/lib/libFLAC.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Escape.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = Escape.exe
   TARGET_IMPLIB = libEscape.dll.a
   TARGET_PDB = Escape.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target EscapeExe
-
-
-#############################################
-# Order-only phony target for EscapeExe
-
-build cmake_object_order_depends_target_EscapeExe: phony || CMakeFiles/EscapeExe.dir
-
-build CMakeFiles/EscapeExe.dir/main.cpp.obj: CXX_COMPILER__EscapeExe_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/main.cpp || cmake_object_order_depends_target_EscapeExe
-  DEP_FILE = CMakeFiles\EscapeExe.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/SFML/include
-  OBJECT_DIR = CMakeFiles\EscapeExe.dir
-  OBJECT_FILE_DIR = CMakeFiles\EscapeExe.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target EscapeExe
-
-
-#############################################
-# Link the executable EscapeExe.exe
-
-build EscapeExe.exe: CXX_EXECUTABLE_LINKER__EscapeExe_Debug CMakeFiles/EscapeExe.dir/main.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\EscapeExe.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = EscapeExe.exe
-  TARGET_IMPLIB = libEscapeExe.dll.a
-  TARGET_PDB = EscapeExe.exe.dbg
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target core
-
-
-#############################################
-# Order-only phony target for core
-
-build cmake_object_order_depends_target_core: phony || CMakeFiles/core.dir
-
-build CMakeFiles/core.dir/main.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/main.cpp || cmake_object_order_depends_target_core
-  DEP_FILE = CMakeFiles\core.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/SFML/include
-  OBJECT_DIR = CMakeFiles\core.dir
-  OBJECT_FILE_DIR = CMakeFiles\core.dir
-
-build CMakeFiles/core.dir/Class/Hero.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Hero.cpp || cmake_object_order_depends_target_core
-  DEP_FILE = CMakeFiles\core.dir\Class\Hero.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/SFML/include
-  OBJECT_DIR = CMakeFiles\core.dir
-  OBJECT_FILE_DIR = CMakeFiles\core.dir\Class
-
-build CMakeFiles/core.dir/Class/Weapon.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Weapon.cpp || cmake_object_order_depends_target_core
-  DEP_FILE = CMakeFiles\core.dir\Class\Weapon.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/SFML/include
-  OBJECT_DIR = CMakeFiles\core.dir
-  OBJECT_FILE_DIR = CMakeFiles\core.dir\Class
-
-build CMakeFiles/core.dir/Class/Bullet.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Bullet.cpp || cmake_object_order_depends_target_core
-  DEP_FILE = CMakeFiles\core.dir\Class\Bullet.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/SFML/include
-  OBJECT_DIR = CMakeFiles\core.dir
-  OBJECT_FILE_DIR = CMakeFiles\core.dir\Class
-
-build CMakeFiles/core.dir/Class/MySprite.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/MySprite.cpp || cmake_object_order_depends_target_core
-  DEP_FILE = CMakeFiles\core.dir\Class\MySprite.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/SFML/include
-  OBJECT_DIR = CMakeFiles\core.dir
-  OBJECT_FILE_DIR = CMakeFiles\core.dir\Class
-
-build CMakeFiles/core.dir/Class/Map.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Map.cpp || cmake_object_order_depends_target_core
-  DEP_FILE = CMakeFiles\core.dir\Class\Map.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/SFML/include
-  OBJECT_DIR = CMakeFiles\core.dir
-  OBJECT_FILE_DIR = CMakeFiles\core.dir\Class
-
-build CMakeFiles/core.dir/Class/Game.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Game.cpp || cmake_object_order_depends_target_core
-  DEP_FILE = CMakeFiles\core.dir\Class\Game.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/SFML/include
-  OBJECT_DIR = CMakeFiles\core.dir
-  OBJECT_FILE_DIR = CMakeFiles\core.dir\Class
-
-build CMakeFiles/core.dir/Class/FileReader.cpp.obj: CXX_COMPILER__core_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/FileReader.cpp || cmake_object_order_depends_target_core
-  DEP_FILE = CMakeFiles\core.dir\Class\FileReader.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  INCLUDES = -IC:/SFML/include
-  OBJECT_DIR = CMakeFiles\core.dir
-  OBJECT_FILE_DIR = CMakeFiles\core.dir\Class
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target core
-
-
-#############################################
-# Link the static library libcore.a
-
-build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/main.cpp.obj CMakeFiles/core.dir/Class/Hero.cpp.obj CMakeFiles/core.dir/Class/Weapon.cpp.obj CMakeFiles/core.dir/Class/Bullet.cpp.obj CMakeFiles/core.dir/Class/MySprite.cpp.obj CMakeFiles/core.dir/Class/Map.cpp.obj CMakeFiles/core.dir/Class/Game.cpp.obj CMakeFiles/core.dir/Class/FileReader.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles\core.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = libcore.a
-  TARGET_PDB = core.a.dbg
 
 
 #############################################
@@ -225,7 +174,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for runAllTests
 
-build cmake_object_order_depends_target_runAllTests: phony || cmake_object_order_depends_target_core cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_runAllTests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
 build Test/CMakeFiles/runAllTests.dir/runAllTests.cpp.obj: CXX_COMPILER__runAllTests_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Test/runAllTests.cpp || cmake_object_order_depends_target_runAllTests
   DEFINES = -DSFML_STATIC
@@ -242,6 +191,14 @@ build Test/CMakeFiles/runAllTests.dir/HeroTests.cpp.obj: CXX_COMPILER__runAllTes
   INCLUDES = -I"C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest" -isystem "C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest/include" -isystem C:/SFML/include
   OBJECT_DIR = Test\CMakeFiles\runAllTests.dir
   OBJECT_FILE_DIR = Test\CMakeFiles\runAllTests.dir
+
+build Test/CMakeFiles/runAllTests.dir/__/Class/Game.cpp.obj: CXX_COMPILER__runAllTests_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Game.cpp || cmake_object_order_depends_target_runAllTests
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = Test\CMakeFiles\runAllTests.dir\__\Class\Game.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest" -isystem "C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest/include" -isystem C:/SFML/include
+  OBJECT_DIR = Test\CMakeFiles\runAllTests.dir
+  OBJECT_FILE_DIR = Test\CMakeFiles\runAllTests.dir\__\Class
 
 build Test/CMakeFiles/runAllTests.dir/__/Class/Hero.cpp.obj: CXX_COMPILER__runAllTests_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Hero.cpp || cmake_object_order_depends_target_runAllTests
   DEFINES = -DSFML_STATIC
@@ -315,6 +272,14 @@ build Test/CMakeFiles/runAllTests.dir/FileReaderTests.cpp.obj: CXX_COMPILER__run
   OBJECT_DIR = Test\CMakeFiles\runAllTests.dir
   OBJECT_FILE_DIR = Test\CMakeFiles\runAllTests.dir
 
+build Test/CMakeFiles/runAllTests.dir/__/Class/Menu.cpp.obj: CXX_COMPILER__runAllTests_Debug C$:/Users/tudor/OneDrive$ -$ stud.unifi.it/Documenti/CLionProjects/Escape/Class/Menu.cpp || cmake_object_order_depends_target_runAllTests
+  DEFINES = -DSFML_STATIC
+  DEP_FILE = Test\CMakeFiles\runAllTests.dir\__\Class\Menu.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I"C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest" -isystem "C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/Test/lib/googletest/include" -isystem C:/SFML/include
+  OBJECT_DIR = Test\CMakeFiles\runAllTests.dir
+  OBJECT_FILE_DIR = Test\CMakeFiles\runAllTests.dir\__\Class
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runAllTests
@@ -323,9 +288,9 @@ build Test/CMakeFiles/runAllTests.dir/FileReaderTests.cpp.obj: CXX_COMPILER__run
 #############################################
 # Link the executable Test\runAllTests.exe
 
-build Test/runAllTests.exe: CXX_EXECUTABLE_LINKER__runAllTests_Debug Test/CMakeFiles/runAllTests.dir/runAllTests.cpp.obj Test/CMakeFiles/runAllTests.dir/HeroTests.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Hero.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Weapon.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Bullet.cpp.obj Test/CMakeFiles/runAllTests.dir/WeaponTests.cpp.obj Test/CMakeFiles/runAllTests.dir/MapTest.cpp.obj Test/CMakeFiles/runAllTests.dir/GameTest.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Map.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/FileReader.cpp.obj Test/CMakeFiles/runAllTests.dir/FileReaderTests.cpp.obj | Test/lib/googletest/libgtestd.a Test/lib/googletest/libgtest_maind.a libcore.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-network-s-d.a Test/lib/googletest/libgtestd.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libfreetype.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a C$:/SFML/lib/libsfml-system-s-d.a || Test/lib/googletest/libgtest_maind.a Test/lib/googletest/libgtestd.a libcore.a
+build Test/runAllTests.exe: CXX_EXECUTABLE_LINKER__runAllTests_Debug Test/CMakeFiles/runAllTests.dir/runAllTests.cpp.obj Test/CMakeFiles/runAllTests.dir/HeroTests.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Game.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Hero.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Weapon.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Bullet.cpp.obj Test/CMakeFiles/runAllTests.dir/WeaponTests.cpp.obj Test/CMakeFiles/runAllTests.dir/MapTest.cpp.obj Test/CMakeFiles/runAllTests.dir/GameTest.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Map.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/FileReader.cpp.obj Test/CMakeFiles/runAllTests.dir/FileReaderTests.cpp.obj Test/CMakeFiles/runAllTests.dir/__/Class/Menu.cpp.obj | Test/lib/googletest/libgtestd.a Test/lib/googletest/libgtest_maind.a C$:/SFML/lib/libsfml-system-s-d.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libsfml-graphics-s-d.a C$:/SFML/lib/libsfml-audio-s-d.a C$:/SFML/lib/libsfml-network-s-d.a Test/lib/googletest/libgtestd.a C$:/SFML/lib/libsfml-window-s-d.a C$:/SFML/lib/libfreetype.a C$:/SFML/lib/libopenal32.a C$:/SFML/lib/libvorbisfile.a C$:/SFML/lib/libvorbisenc.a C$:/SFML/lib/libvorbis.a C$:/SFML/lib/libogg.a C$:/SFML/lib/libFLAC.a C$:/SFML/lib/libsfml-system-s-d.a || Test/lib/googletest/libgtest_maind.a Test/lib/googletest/libgtestd.a
   FLAGS = -g
-  LINK_LIBRARIES = Test/lib/googletest/libgtestd.a  Test/lib/googletest/libgtest_maind.a  libcore.a  C:/SFML/lib/libsfml-system-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  C:/SFML/lib/libsfml-graphics-s-d.a  C:/SFML/lib/libsfml-audio-s-d.a  C:/SFML/lib/libsfml-network-s-d.a  Test/lib/googletest/libgtestd.a  C:/SFML/lib/libsfml-window-s-d.a  -lgdi32  -lOpenGL32  C:/SFML/lib/libfreetype.a  C:/SFML/lib/libopenal32.a  C:/SFML/lib/libvorbisfile.a  C:/SFML/lib/libvorbisenc.a  C:/SFML/lib/libvorbis.a  C:/SFML/lib/libogg.a  C:/SFML/lib/libFLAC.a  C:/SFML/lib/libsfml-system-s-d.a  -lwinmm  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = Test/lib/googletest/libgtestd.a  Test/lib/googletest/libgtest_maind.a  C:/SFML/lib/libsfml-system-s-d.a  C:/SFML/lib/libsfml-window-s-d.a  C:/SFML/lib/libsfml-graphics-s-d.a  C:/SFML/lib/libsfml-audio-s-d.a  C:/SFML/lib/libsfml-network-s-d.a  Test/lib/googletest/libgtestd.a  C:/SFML/lib/libsfml-window-s-d.a  -lgdi32  -lOpenGL32  C:/SFML/lib/libfreetype.a  C:/SFML/lib/libopenal32.a  C:/SFML/lib/libvorbisfile.a  C:/SFML/lib/libvorbisenc.a  C:/SFML/lib/libvorbis.a  C:/SFML/lib/libogg.a  C:/SFML/lib/libFLAC.a  C:/SFML/lib/libsfml-system-s-d.a  -lwinmm  -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Test\CMakeFiles\runAllTests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -453,10 +418,6 @@ build Test/lib/googletest/rebuild_cache: phony Test/lib/googletest/CMakeFiles/re
 
 build Escape: phony Escape.exe
 
-build EscapeExe: phony EscapeExe.exe
-
-build core: phony libcore.a
-
 build gtest: phony Test/lib/googletest/libgtestd.a
 
 build gtest_main: phony Test/lib/googletest/libgtest_maind.a
@@ -477,7 +438,7 @@ build runAllTests.exe: phony Test/runAllTests.exe
 #############################################
 # Folder: C:/Users/tudor/OneDrive - stud.unifi.it/Documenti/CLionProjects/Escape/cmake-build-debug
 
-build all: phony Escape.exe EscapeExe.exe libcore.a Test/all
+build all: phony Escape.exe Test/all
 
 # =============================================================================
 

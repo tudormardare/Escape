@@ -24,9 +24,7 @@ bool Hero::shoot() {
     return true;
 }
 
-Hero::~Hero(){
-
-}
+Hero::~Hero()= default;
 
 int Hero::getHp() const{
     return this->hp;

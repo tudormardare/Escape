@@ -13,8 +13,9 @@ private:
     std::unique_ptr<Map> map;
     int level;
 public:
-    explicit Game(const int& level);
     ~Game();
+    void run();
+    Game();
 };
 
 
